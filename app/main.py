@@ -1,4 +1,6 @@
 from fastapi import FastAPI
+from fastapi import HTTPException
+from app.calcupy import calculate
 
 app = FastAPI(
     title="Python Dev Profile",
@@ -48,3 +50,24 @@ def skills():
             "MySQL",
         ],
     }
+
+
+@app.get("/calculator")
+def calculator(
+    a: float,
+    b: float,
+    operation: str,
+):
+    try:
+        result = calculate(a, b, operation)
+        return {
+            "a": a,
+            "b": b,
+            "operation": operation,
+            "result": result,
+        }
+    except ValueError as error:
+        raise HTTPException(
+            status_code=400,
+            detail=str(error),
+        )
