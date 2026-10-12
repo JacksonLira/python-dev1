@@ -1,12 +1,43 @@
-# Python Dev Profile
+
+# Python Estudos
+
+Repositório dedicado ao meu aprendizado de Python, com exercícios e pequenos projetos práticos.
+
+## Projetos
+
+## 01. app fastAPI
 
 Minha primeira API desenvolvida com Python e FastAPI.
 
+### 02. Calculadora
+
+Calculadora desenvolvida em Python para praticar operadores matemáticos, funções e entrada de dados.
+
+### 03. Conversor de Temperatura
+
+Programa para converter temperaturas entre Celsius e Fahrenheit, praticando funções, condicionais e conversão de tipos.
+
 ## Tecnologias
 
-* Python
-* FastAPI
-* Uvicorn
+- Python 3
+- Git
+- GitHub
+- Visual Studio Code
+- Python
+- FastAPI
+- Uvicorn
+
+## Objetivos de aprendizado
+
+- Desenvolver lógica de programação.
+- Praticar funções e estruturas condicionais.
+- Aprender a tratar erros e validar entradas.
+- Utilizar Git para controlar versões.
+- Documentar e compartilhar projetos.
+
+## Evolução
+
+Novos exercícios e projetos serão adicionados conforme meu aprendizado avançar.
 
 ## Funcionalidades
 
@@ -40,3 +71,5 @@ python -m uvicorn app.main:app --reload
 Acesse a documentação da API:
 
 http://127.0.0.1:8000/docs
+
+
